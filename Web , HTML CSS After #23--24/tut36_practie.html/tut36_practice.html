@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes_practice!!!</title>
+    <style>
+        div {
+            /* border: 2px solid red; */
+            background-color: rgb(54, 85, 223);
+            color: rgb(104, 218, 104);
+            height: 34px;
+            width: 240px;
+            position: relative;
+            animation: aryan 6s 1;
+
+        }
+
+        @keyframes aryan {
+            0% {
+                top: 0px;
+                background-color: red;
+                width: 340px;
+            }
+
+            100% {
+                top: 200px;
+                background-color: rgb(200, 255, 0);
+                width: 440px;
+                /* 
+                width: 440px !important;             
+                */
+            }
+
+        }
+
+        * {
+            background-color: rgb(246, 245, 247);
+            overflow: hidden;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        body {
+            padding: 50px;
+
+        }
+
+        #loader {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            /* background-color: wheat; */
+
+            border-radius: 50%;
+            border: 5px solid #7e6a6a;
+            border-top-color: #333;
+            background-color: #ddd;
+
+            animation: rotate 2s linear infinite;
+            /* animation-iteration-count: infinite; */
+        }
+
+        @keyframes rotate {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The @keyframes Rule</h1>
+    <div id="loader">
+    </div>
+</body>
+
+</html>

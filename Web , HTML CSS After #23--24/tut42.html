@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+
+            grid-gap: 1rem;
+
+        }
+
+
+        .box {
+            /* border: 2px solid rgb(8, 8, 8); */
+            background-color: rgb(91, 194, 235);
+            padding: 3px 3px;
+        }
+
+
+
+
+        .box:nth-child(2) {
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4; */
+
+
+            /* shorthand */
+            grid-column: 1 / span 2;   /* column : right left */
+            
+            grid-row: 1 / span 10;       /* row : top bottom */
+
+        }
+
+        .box:nth-child(1) {
+
+            grid-column: 6 / span 13;  /* column : right left */
+            
+            grid-row: 1 / span 10;      /* row : top bottom */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <!-- <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div> -->
+
+        <!-- <div class="box">item-7</div> -->
+
+        <!-- <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-1A</div>
+        <div class="box">item-1B</div>
+        <div class="box">item-1C</div>
+        <div class="box">item-1D</div>
+        <div class="box">item-1E</div>
+        <div class="box">item-1F</div> -->
+    </div>
+
+</body>
+
+</html>

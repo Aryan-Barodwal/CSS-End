@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS SELECTORS</title>
+    <style>
+        h1 {
+            border: 2px solid red;
+            background-color: red;
+            text-align: center;
+        }
+
+       div>p {              /*    */
+            background-color: yellow;
+            border: 2px solid blue;
+            color: red;
+        }
+
+        .item {
+            list-style-type: none;
+        }
+
+        /* div+p {
+
+            background-color: black;
+            color: red;
+        } */
+    </style>
+
+
+</head>
+
+<body>
+    <h1>
+        This is heading!!!
+    </h1>
+    <div class="container">
+
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>
+                        This is sufficient paragraph!!!</p>
+                </li>
+            </ul>
+
+            <p> This is first paragraph!!</p>
+        </div>
+        <p> This is second paragraph!!</p>
+
+    </div>
+    <p> This is third paragraph!!</p>
+
+</body>
+
+</html>

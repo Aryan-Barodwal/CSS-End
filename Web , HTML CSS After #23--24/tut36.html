@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and Animation</title>
+    <style>
+        .container {
+            color: rgb(1, 7, 7);
+            /* background-color: rgb(148, 142, 155); */
+        }
+
+        .box {
+            background-color: rgb(196, 238, 134);
+            border: 2px solid red;
+            height: 250px;
+
+            /* left: 120px; */
+            /* top: 240px; */
+
+
+            /* animation-name: aryan1; */
+            /* animation-name: aryan2;
+            
+            animation-duration: 3s;
+            
+            animation-iteration-count: 1; */
+            /* animation-fill-mode:backward ; */
+            /* animation-fill-mode:forward ; */
+
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+
+            /* ShortHand for animation!!!!! */
+            /* These properties can be set using this shorthand */
+
+            /* 
+            animation: animation-name , animation-duration , animation-timing-function , animation-delay , animation-iteration-count , animation-fill-mode ;  
+            */
+
+            width: 250px;
+            position: relative;
+            animation: harry 3s 1 ;
+        }
+
+   
+
+        .box{
+            padding: 20px 20px;
+
+        }
+        /* 
+        @keyframes harry {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 1200px;
+            }
+        } */
+
+
+
+        /* ________________________________________________________________________________________ */
+
+        @keyframes harry {
+            0% {
+                top: 0px;
+                left: 0px;
+                border-radius: 30px;
+                background-color: rgb(182, 51, 51);
+                width: 300px;
+            }
+
+
+            100% {
+                top: 350px;
+                left: 0px;
+                background-color: chartreuse;
+                width: 500px;
+                border-radius: 30px;
+                
+            }
+        }
+
+        /*________________________________________________________________________________________ */
+
+
+        /* 0% {
+                top: 240px;
+                left: 80px;
+            } */
+
+        /* 25% {
+                top: 250px;
+                left: 0px;
+
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Welcome to CodeWithHarry</h1>
+            <p>Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

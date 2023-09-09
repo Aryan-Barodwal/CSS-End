@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Media Querys</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    h3 {
+      text-align: center;
+      color: blue;
+    }
+
+    .text_container {
+      border: 3px solid black;
+      display: flex;
+      justify-content: center;
+      /* align-items: base-line; */
+      /* border: none; */
+
+
+    }
+
+    p.ntr {
+      border: 2px solid red;
+
+    }
+
+
+    .width {
+      width: 30%;
+    }
+
+    .width img {
+      height: 100%;
+
+    }
+
+    h3 {
+      border: 2px solid black;
+      margin: 50px 0;
+      text-align: center;
+      border: none;
+    }
+/* 
+    .nature-width {
+      display: flex;
+      justify-content: center;
+    } */
+
+    .tur {
+      border: 2px solid rgb(223, 71, 71);
+      max-height: 280px;
+      max-width: 459px;
+      margin: 50px 0 px;
+
+
+    }
+
+    @media screen and (max-width : 768px) {
+      h3 {
+        color: rgb(236, 243, 243);
+        background-color: black;
+        border: 2px solid black;
+      }
+
+      .text_container {
+        /* border: 3px solid black; */
+        /* justify-content: space-around; */
+        /* align-items: base-line;
+      border: none; */
+        display: block;
+
+      }
+
+      .width {
+        width: 100%;
+      }
+
+      .nature-width p {
+        width: 100%;
+        height: auto;
+
+      }
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <h3>Today We Learn Media Queries</h3>
+    <div class="text_container">
+
+      <div class="nature_width">
+        <p class="ntr">Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Vitae illum consequuntur fugit!
+          Suscipit distinctio enim veniam earum vel soluta rerum quasi fugiat accusamus architecto beatae
+          ducimus
+          lorem
+          reiciendis dolore nam, impedit voluptatum dignissimos totam quos sed est assumenda! Similique,
+          adipiscil
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perferendis dignissimos et, dicta
+          numquam
+          debitis unde. Iure temporibus harum dolores, praesentium porro cupiditate inventore, eius sed aut
+          quis
+          ab accusamus! .</p>
+      </div>
+
+      <div class="width">
+
+        <img class="tur" src="https://cdn.pixabay.com/photo/2023/05/30/15/39/fox-squirrel-8028963_1280.jpg">
+      </div>
+
+    </div>
+  </div>
+</body>
